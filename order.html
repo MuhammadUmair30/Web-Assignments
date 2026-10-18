@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Sweets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="site-header">
+        <h1 class="logo">All About Sweets</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flavors.html">Flavors</a></li>
+                <li><a href="order.html" class="btn">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= PAGE 3: ORDER ================= -->
+        <section class="page" id="order">
+            <section class="content-box">
+                <h2>Place Your Order</h2>
+
+                <form action="#" method="post" id="order-form">
+
+                    <div class="form-row">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="30"
+                            placeholder="Your name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="pass" required minlength="6" maxlength="20">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="date">Delivery Date:</label>
+                        <input type="date" id="date" name="date" min="2026-10-17" max="2027-12-31" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="time">Delivery Time:</label>
+                        <input type="time" id="time" name="time" min="08:00" max="18:00">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" id="qty" name="qty" min="1" max="10" value="1">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="flavor">Flavor:</label>
+                        <select id="flavor" name="flavor">
+                            <option value="choco">Chocolate Fudge</option>
+                            <option value="ube" selected>Ube Cheese</option>
+                            <option value="mango">Mango Cream</option>
+                            <option value="velvet">Red Velvet</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form-row">
+                        <legend>Size:</legend>
+                        <input type="radio" id="s6" name="size" value="6"><label for="s6">6 inch</label>
+                        <input type="radio" id="s8" name="size" value="8" checked><label for="s8">8 inch</label>
+                        <input type="radio" id="s10" name="size" value="10"><label for="s10">10 inch</label>
+                    </fieldset>
+
+                    <fieldset class="form-row">
+                        <legend>Extras:</legend>
+                        <input type="checkbox" id="candles" name="extras" value="candles" checked>
+                        <label for="candles">Candles</label>
+                        <input type="checkbox" id="card" name="extras" value="card">
+                        <label for="card">Greeting card</label>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <label for="code">Order Code:</label>
+                        <input type="text" id="code" name="code" value="SWEET-2026" readonly>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="promo">Promo (closed):</label>
+                        <input type="text" id="promo" name="promo" value="Not available" disabled>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="notes">Special Notes:</label>
+                        <textarea id="notes" name="notes" rows="4" cols="40" maxlength="200"
+                            placeholder="Message on the cake, allergies, etc."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" value="Send Order" class="btn">
+                        <input type="reset" value="Clear" class="btn btn-light">
+                    </div>
+
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; @2026 All About Sweets |
+            <a href="index.html">Home</a> |
+            <a href="flavors.html">Flavors</a> |
+            <a href="order.html">Order</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
