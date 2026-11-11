@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Sweets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <header id="site-header">
+        <h1 class="logo">All About Sweets</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= PAGE 6: LOGIN ================= -->
+        <section class="page" id="login">
+
+            <section class="content-box">
+                <h2>Login</h2>
+                <p>
+                    Welcome back! Log in to see your cake orders.
+                </p>
+
+                <form action="#" method="post" id="login-form">
+
+                    <div class="form-row">
+                        <label for="lemail">Email:</label>
+                        <input type="email" id="lemail" name="lemail" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lpass">Password:</label>
+                        <input type="password" id="lpass" name="lpass" required minlength="6" maxlength="20">
+                    </div>
+
+                    <fieldset class="form-row">
+                        <legend>Options:</legend>
+                        <input type="checkbox" id="remember" name="remember" value="yes" checked>
+                        <label for="remember">Remember me</label>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <input type="submit" value="Log In" class="btn">
+                        <input type="reset" value="Clear" class="btn btn-light">
+                    </div>
+
+                </form>
+            </section>
+
+            <section class="content-box">
+                <h3>New Here?</h3>
+                <p>
+                    You do not need an account to order. Visit our
+                    <a href="flavors.html">flavors and prices</a>, or
+                    <a href="order.html">place an order</a> today. Forgot your password?
+                    <a href="contact.html">Contact us</a>.
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; @2026 All About Sweets |
+            <a href="blog.html">Blog</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="login.html">Login</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
