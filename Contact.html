@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Sweets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+    <header id="site-header">
+        <h1 class="logo">All About Sweets</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+     
+        <section class="page" id="contact">
+
+            <section class="content-box">
+                <h2>Contact Us</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmWrSM9gXncR0hpQZwvrEQlen_pI6pAFr4pxHWlHIPQdgpqPTQt6b7Gjn&s=10"
+                    alt="Our baker at work" class="float-left">
+                <p>
+                    All About Sweets started in a small home kitchen. Today we bake
+                    birthday cakes, cupcakes, and pastries for families all over town.
+                    Have a question or a special request? Send us a message.
+                </p>
+
+                <h4>Shop details</h4>
+                <ul class="flavor-list">
+                    <li>Phone: 0300-1234567</li>
+                    <li>Email: hello@allaboutsweets.com</li>
+                    <li>Hours: Monday to Saturday, 8:00 AM to 6:00 PM</li>
+                </ul>
+            </section>
+
+            <section class="content-box">
+                <h3>Send a Message</h3>
+
+                <form action="#" method="post" id="contact-form">
+
+                    <div class="form-row">
+                        <label for="cname">Full Name:</label>
+                        <input type="text" id="cname" name="cname" required minlength="3" maxlength="30"
+                            placeholder="Your name">
+                        <span class="hint" id="name-hint"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="cemail">Email:</label>
+                        <input type="email" id="cemail" name="cemail" required placeholder="you@example.com">
+                        <span class="hint" id="email-hint"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="topic">Topic:</label>
+                        <select id="topic" name="topic">
+                            <option value="order" selected>Question about an order</option>
+                            <option value="custom">Custom cake design</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" cols="40" maxlength="200" required
+                            placeholder="How can we help you?"></textarea>
+                        <span class="hint" id="count-hint"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" value="Send Message" class="btn" id="send-btn">
+                        <input type="reset" value="Clear" class="btn btn-light">
+                    </div>
+
+                </form>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; @2026 All About Sweets |
+            <a href="blog.html">Blog</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="login.html">Login</a>
+        </p>
+    </footer>
+
+    <!-- Popup shown after the message is sent -->
+    <div class="modal-overlay" id="thanks-modal">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <h3 id="modal-title">Message Sent!</h3>
+            <p id="modal-text"></p>
+            <button type="button" class="btn" id="modal-close">Close</button>
+        </div>
+    </div>
+
+    <!-- Welcome message that slides in -->
+    <div class="toast" id="toast">Welcome! We usually reply within 24 hours.</div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
